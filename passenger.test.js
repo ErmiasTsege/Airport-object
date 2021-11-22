@@ -30,7 +30,12 @@ describe ("passenger Class", ()=>{
         testBags.addBag(testBag)
         expect(testBags.bags[0].weight).toBe(88)       
         
-    })
+    }) 
+    test('is an instance of a Passenger', () => {
+    const betty = new Passenger('Betty', 'ABC123', '1A')
+    expect(betty instanceof Passenger).toBeTruthy()
+})
+
     
 })
 
